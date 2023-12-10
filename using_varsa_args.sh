@@ -3,8 +3,8 @@
 PACKAGES="wget unzip git httpd"
 SVC="httpd"
 TMP_FILES="/tmp/webfiles/"
-URL="https://www.tooplate.com/zip-templates/2137_barista_cafe.zip"
-ARTIFACT="2137_barista_cafe"
+#URL="https://www.tooplate.com/zip-templates/2137_barista_cafe.zip"
+#ARTIFACT="2137_barista_cafe"
 
 
 echo "#############################################################"
@@ -28,9 +28,13 @@ echo "#################################################################"
 echo "Downloading the website and unzip the webfiles"
 echo "#################################################################"
 
-wget $URL
-unzip $ARTIFACT.zip
-cp -rf $ARTIFACT/* /var/www/html/
+#wget $URL
+#unzip $ARTIFACT.zip
+#cp -rf $ARTIFACT/* /var/www/html/
+
+wget $1
+unzip $2.zip
+cp -rf $2/* /var/www/html/
 
 echo "#################################################################"
 echo "restart the httpd service"
@@ -46,3 +50,4 @@ echo "#################################################################"
 rm -rf $TMP_FILES*
 
 systemctl status $SVC
+
