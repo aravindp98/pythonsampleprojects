@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo yum purge wget unzip git httpd -y
+sudo yum unistall wget unzip git httpd -y
 
 sudo rm -rf /tmp/webfiles/*
 
