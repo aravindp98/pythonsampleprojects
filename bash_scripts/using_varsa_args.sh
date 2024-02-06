@@ -6,7 +6,6 @@ TMP_FILES="/tmp/webfiles/"
 #URL="https://www.tooplate.com/zip-templates/2137_barista_cafe.zip"
 #ARTIFACT="2137_barista_cafe"
 
-
 echo "#############################################################"
 echo "##### Installing Packages and start the httpd service #####"
 echo "#################################################################"
