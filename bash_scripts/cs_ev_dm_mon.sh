@@ -38,3 +38,5 @@ decision_making() {
 
 MEMORY=$(command_substitution)
 decision_making "$MEMORY"
+command_substitution
+export_variable
