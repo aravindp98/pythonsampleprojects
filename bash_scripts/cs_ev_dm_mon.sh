@@ -5,7 +5,7 @@ command_substitution() {
     echo "Command Substitution"
     echo "################################"
 
-    MEMORY=$(free -m | grep Mem | awk '{print $4}')
+    MEMORY=$(free -m | grep Mem | awk '{print $2}')
 
     echo "Free Memory: $MEMORY"
     echo "Exit code: $?"
