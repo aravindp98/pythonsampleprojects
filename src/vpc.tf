@@ -9,7 +9,7 @@ resource "aws_vpc" "devOps_project" {
 
 resource "aws_subnet" "PrivateA" {
   vpc_id = aws_vpc.devOps_project.id
-  cidr_block = "10.0.0.1/20"
+  cidr_block = "10.0.0.0/20"
   availability_zone = var.zone1
 }
 
